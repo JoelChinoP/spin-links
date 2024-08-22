@@ -13,7 +13,7 @@ function App() {
     const seconds = now.getSeconds();
     const arraySize = numbers.length;
     
-    const index = Math.floor((seconds / 2) % arraySize); //El tres representa el intervalo de cambio en seg
+    const index = Math.floor((seconds / 2) % arraySize); //El 2 representa el intervalo de cambio en seg
     const message = encodeURIComponent("Hola, me pueden ayudar en ");
     const whatsappLink = `https://wa.me/51${numbers[index]}?text=${message}`;
 
@@ -23,9 +23,7 @@ function App() {
   return (
     <>
       <h1>Rediccionanding...</h1>
-      <p className="read-the-docs">
-        @Todos los derechos reservados
-      </p>
+      <p> @Todos los derechos reservados </p>
     </>
   );
 }
